@@ -1,0 +1,296 @@
+App 122972 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 122972 output: Server listening on port - 5000
+App 122972 output: Executing (default): SELECT count(*) AS `count` FROM `webpieces` AS `webpiece`;
+App 122972 output: Executing (default): CREATE TABLE IF NOT EXISTS `webpieces` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `title` VARCHAR(255) NOT NULL, `description` VARCHAR(255) NOT NULL, `imageUrl` VARCHAR(255) NOT NULL, `imageFullsizedUrl` VARCHAR(255), `isDeleted` TINYINT(1) DEFAULT false, `hasBeenDone` TINYINT(1) DEFAULT false, `selectedTechnologies` INTEGER, `userContactDetails` JSON NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 122972 output: Executing (default): SELECT `id`, `uuid`, `username`, `title`, `description`, `imageUrl`, `imageFullsizedUrl`, `isDeleted`, `hasBeenDone`, `selectedTechnologies`, `userContactDetails`, `createdAt`, `updatedAt` FROM `webpieces` AS `webpiece`;
+App 122972 output: Executing (default): SHOW FULL COLUMNS FROM `webpieces`;
+App 122972 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'webpieces' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 122972 output: [0mGET /webpieces [32m200[0m 110.327 ms - 73[0m
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `description` `description` VARCHAR(255) NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageUrl` `imageUrl` VARCHAR(255) NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageFullsizedUrl` `imageFullsizedUrl` VARCHAR(255);
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `isDeleted` `isDeleted` TINYINT(1) DEFAULT false;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `hasBeenDone` `hasBeenDone` TINYINT(1) DEFAULT false;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `selectedTechnologies` `selectedTechnologies` INTEGER;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `userContactDetails` `userContactDetails` JSON NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 122972 output: Executing (default): SHOW INDEX FROM `webpieces`
+App 122972 output: Executing (default): SELECT count(*) AS `count` FROM `webpieces` AS `webpiece`;
+App 122972 output: Executing (default): CREATE TABLE IF NOT EXISTS `webpieces` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `title` VARCHAR(255) NOT NULL, `description` VARCHAR(255) NOT NULL, `imageUrl` VARCHAR(255) NOT NULL, `imageFullsizedUrl` VARCHAR(255), `isDeleted` TINYINT(1) DEFAULT false, `hasBeenDone` TINYINT(1) DEFAULT false, `selectedTechnologies` INTEGER, `userContactDetails` JSON NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 122972 output: Executing (default): SELECT `id`, `uuid`, `username`, `title`, `description`, `imageUrl`, `imageFullsizedUrl`, `isDeleted`, `hasBeenDone`, `selectedTechnologies`, `userContactDetails`, `createdAt`, `updatedAt` FROM `webpieces` AS `webpiece`;
+App 122972 output: Executing (default): SHOW FULL COLUMNS FROM `webpieces`;
+App 122972 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'webpieces' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 122972 output: [0mGET /webpieces [36m304[0m 5.666 ms - -[0m
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `description` `description` VARCHAR(255) NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageUrl` `imageUrl` VARCHAR(255) NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageFullsizedUrl` `imageFullsizedUrl` VARCHAR(255);
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `isDeleted` `isDeleted` TINYINT(1) DEFAULT false;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `hasBeenDone` `hasBeenDone` TINYINT(1) DEFAULT false;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `selectedTechnologies` `selectedTechnologies` INTEGER;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `userContactDetails` `userContactDetails` JSON NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `webpieces` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 122972 output: Executing (default): SHOW INDEX FROM `webpieces`
+App 122972 output: Executing (default): SELECT count(*) AS `count` FROM `updateRequests` AS `updateRequest`;
+App 122972 output: Executing (default): CREATE TABLE IF NOT EXISTS `updateRequests` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `type` VARCHAR(255) NOT NULL, `invited` TINYINT(1) DEFAULT false, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 122972 output: Executing (default): SELECT `id`, `uuid`, `username`, `email`, `type`, `invited`, `createdAt`, `updatedAt` FROM `updateRequests` AS `updateRequest`;
+App 122972 output: Executing (default): SHOW FULL COLUMNS FROM `updateRequests`;
+App 122972 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'updateRequests' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 122972 output: [0mGET /updates [36m304[0m 9.548 ms - -[0m
+App 122972 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 122972 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `email` `email` VARCHAR(255) NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `type` `type` VARCHAR(255) NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `invited` `invited` TINYINT(1) DEFAULT false;
+App 122972 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 122972 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 122972 output: Executing (default): SHOW INDEX FROM `updateRequests`
+App 136511 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 136511 output: Server listening on port - 5000
+App 136511 output: [0mGET / [36m304[0m 3.900 ms - -[0m
+App 136511 output: Executing (default): SELECT count(*) AS `count` FROM `webpieces` AS `webpiece`;
+App 136511 output: Executing (default): CREATE TABLE IF NOT EXISTS `webpieces` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `title` VARCHAR(255) NOT NULL, `description` VARCHAR(255) NOT NULL, `imageUrl` VARCHAR(255) NOT NULL, `imageFullsizedUrl` VARCHAR(255), `isDeleted` TINYINT(1) DEFAULT false, `hasBeenDone` TINYINT(1) DEFAULT false, `selectedTechnologies` INTEGER, `userContactDetails` JSON NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 136511 output: Executing (default): SELECT `id`, `uuid`, `username`, `title`, `description`, `imageUrl`, `imageFullsizedUrl`, `isDeleted`, `hasBeenDone`, `selectedTechnologies`, `userContactDetails`, `createdAt`, `updatedAt` FROM `webpieces` AS `webpiece`;
+App 136511 output: Executing (default): SHOW FULL COLUMNS FROM `webpieces`;
+App 136511 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'webpieces' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 136511 output: [0mGET /webpieces [32m200[0m 89.658 ms - 73[0m
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `description` `description` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageUrl` `imageUrl` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageFullsizedUrl` `imageFullsizedUrl` VARCHAR(255);
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `isDeleted` `isDeleted` TINYINT(1) DEFAULT false;
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `hasBeenDone` `hasBeenDone` TINYINT(1) DEFAULT false;
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `selectedTechnologies` `selectedTechnologies` INTEGER;
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `userContactDetails` `userContactDetails` JSON NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `webpieces` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 136511 output: Executing (default): SHOW INDEX FROM `webpieces`
+App 136511 output: { name: 'Bankole',
+App 136511 output:   email: 'techybanky@gmail.com',
+App 136511 output:   type: 'youtube',
+App 136511 output:   isDark: true,
+App 136511 output:   color: '#e91e63',
+App 136511 output:   link: null }
+App 136511 output: Executing (default): CREATE TABLE IF NOT EXISTS `updateRequests` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `type` VARCHAR(255) NOT NULL, `invited` TINYINT(1) DEFAULT false, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 136511 output: Executing (default): SELECT `id`, `uuid`, `username`, `email`, `type`, `invited`, `createdAt`, `updatedAt` FROM `updateRequests` AS `updateRequest` WHERE `updateRequest`.`email` = 'techybanky@gmail.com' AND `updateRequest`.`type` = 'youtube' LIMIT 1;
+App 136511 output: Executing (default): SHOW FULL COLUMNS FROM `updateRequests`;
+App 136511 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'updateRequests' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 136511 output: Executing (default): INSERT INTO `updateRequests` (`id`,`uuid`,`username`,`email`,`type`,`invited`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?);
+App 136511 output: [0mPOST /updates [32m200[0m 49.170 ms - 288[0m
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `email` `email` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `type` `type` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `invited` `invited` TINYINT(1) DEFAULT false;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 136511 output: Executing (default): SHOW INDEX FROM `updateRequests`
+App 136511 output: Message sent: <d3658f28-2c7d-1dca-7289-1859be05887a@banky.studio>
+App 136511 output: Executing (default): SELECT count(*) AS `count` FROM `updateRequests` AS `updateRequest`;
+App 136511 output: Executing (default): CREATE TABLE IF NOT EXISTS `updateRequests` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `type` VARCHAR(255) NOT NULL, `invited` TINYINT(1) DEFAULT false, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 136511 output: Executing (default): SELECT `id`, `uuid`, `username`, `email`, `type`, `invited`, `createdAt`, `updatedAt` FROM `updateRequests` AS `updateRequest`;
+App 136511 output: Executing (default): SHOW FULL COLUMNS FROM `updateRequests`;
+App 136511 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'updateRequests' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 136511 output: [0mGET /updates [32m200[0m 13.326 ms - 289[0m
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `email` `email` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `type` `type` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `invited` `invited` TINYINT(1) DEFAULT false;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 136511 output: Executing (default): SHOW INDEX FROM `updateRequests`
+App 136511 output: { name: 'Bankole',
+App 136511 output:   email: 'techybanky@gmail.com',
+App 136511 output:   type: 'youtube',
+App 136511 output:   isDark: true,
+App 136511 output:   color: '#e91e63',
+App 136511 output:   link: null }
+App 136511 output: Executing (default): CREATE TABLE IF NOT EXISTS `updateRequests` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `email` VARCHAR(255) NOT NULL, `type` VARCHAR(255) NOT NULL, `invited` TINYINT(1) DEFAULT false, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 136511 output: Executing (default): SELECT `id`, `uuid`, `username`, `email`, `type`, `invited`, `createdAt`, `updatedAt` FROM `updateRequests` AS `updateRequest` WHERE `updateRequest`.`email` = 'techybanky@gmail.com' AND `updateRequest`.`type` = 'youtube' LIMIT 1;
+App 136511 output: Executing (default): SHOW FULL COLUMNS FROM `updateRequests`;
+App 136511 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'updateRequests' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 136511 output: [0mPOST /updates [33m429[0m 9.081 ms - 297[0m
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `email` `email` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `type` `type` VARCHAR(255) NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `invited` `invited` TINYINT(1) DEFAULT false;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 136511 output: Executing (default): ALTER TABLE `updateRequests` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 136511 output: Executing (default): SHOW INDEX FROM `updateRequests`
+App 164140 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 164140 output: Server listening on port - 5000
+App 186523 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 186523 output: Server listening on port - 5000
+App 186523 output: [0mGET / [32m200[0m 3.820 ms - 41[0m
+App 204440 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 204440 output: Server listening on port - 5000
+App 204440 output: made directories, starting with /home/bankevjs/webpieces/uploads
+App 204440 output: { fieldname: 'webpieceImage',
+App 204440 output:   originalname: 'zbook.png',
+App 204440 output:   encoding: '7bit',
+App 204440 output:   mimetype: 'image/png',
+App 204440 output:   destination: '/home/bankevjs/webpieces/uploads/webpieces',
+App 204440 output:   filename: '1612964832959.jpeg',
+App 204440 output:   path:
+App 204440 output:    '/home/bankevjs/webpieces/uploads/webpieces/1612964832959.jpeg',
+App 204440 output:   size: 103844 }
+App 204440 output: { webpieceImage: '1612964832959.jpeg' }
+App 204440 output: [0mPOST /webpieces/images [32m200[0m 21.787 ms - 56[0m
+App 204440 output: Executing (default): CREATE TABLE IF NOT EXISTS `webpieces` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `title` VARCHAR(255) NOT NULL, `description` VARCHAR(255) NOT NULL, `imageUrl` VARCHAR(255) NOT NULL, `imageFullsizedUrl` VARCHAR(255), `isDeleted` TINYINT(1) DEFAULT false, `hasBeenDone` TINYINT(1) DEFAULT false, `selectedTechnologies` INTEGER, `userContactDetails` JSON NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 204440 output: Executing (default): SHOW FULL COLUMNS FROM `webpieces`;
+App 204440 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'webpieces' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `description` `description` VARCHAR(255) NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageUrl` `imageUrl` VARCHAR(255) NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageFullsizedUrl` `imageFullsizedUrl` VARCHAR(255);
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `isDeleted` `isDeleted` TINYINT(1) DEFAULT false;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `hasBeenDone` `hasBeenDone` TINYINT(1) DEFAULT false;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `selectedTechnologies` `selectedTechnologies` INTEGER;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `userContactDetails` `userContactDetails` JSON NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 204440 output: Executing (default): SHOW INDEX FROM `webpieces`
+App 204440 output: Executing (default): CREATE TABLE IF NOT EXISTS `webpieces` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `title` VARCHAR(255) NOT NULL, `description` VARCHAR(255) NOT NULL, `imageUrl` VARCHAR(255) NOT NULL, `imageFullsizedUrl` VARCHAR(255), `isDeleted` TINYINT(1) DEFAULT false, `hasBeenDone` TINYINT(1) DEFAULT false, `selectedTechnologies` INTEGER, `userContactDetails` JSON NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 204440 output: { err:
+App 204440 output:    { SequelizeValidationError: notNull Violation: webpiece.imageUrl cannot be null
+App 204440 output:        at InstanceValidator._validate (/home/bankevjs/nodevenv/webpieces/10/lib/node_modules/sequelize/lib/instance-validator.js:78:13)
+App 204440 output:        at process._tickCallback (internal/process/next_tick.js:68:7)
+App 204440 output:      name: 'SequelizeValidationError',
+App 204440 output:      errors: [ [ValidationErrorItem] ] } }
+App 204440 output: [0mPOST /webpieces [33m400[0m 17.129 ms - 99[0m
+App 204440 output: Executing (default): SHOW FULL COLUMNS FROM `webpieces`;
+App 204440 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'webpieces' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `description` `description` VARCHAR(255) NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageUrl` `imageUrl` VARCHAR(255) NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageFullsizedUrl` `imageFullsizedUrl` VARCHAR(255);
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `isDeleted` `isDeleted` TINYINT(1) DEFAULT false;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `hasBeenDone` `hasBeenDone` TINYINT(1) DEFAULT false;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `selectedTechnologies` `selectedTechnologies` INTEGER;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `userContactDetails` `userContactDetails` JSON NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 204440 output: Executing (default): ALTER TABLE `webpieces` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 204440 output: Executing (default): SHOW INDEX FROM `webpieces`
+App 222371 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 222371 output: Server listening on port - 5000
+App 251064 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 251064 output: Server listening on port - 5000
+App 279948 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 279948 output: Server listening on port - 5000
+App 343477 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 343477 output: Server listening on port - 5000
+App 363341 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 363341 output: Server listening on port - 5000
+App 382224 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 382224 output: Server listening on port - 5000
+App 405405 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 405405 output: Server listening on port - 5000
+App 431798 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 431798 output: Server listening on port - 5000
+App 458660 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 458712 output: /home/bankevjs/nodevenv/webpieces/10/bin/node: line 10: export: `scripts-prepend-node-path=true': not a valid identifier
+App 458660 output: Server listening on port - 5000
+App 458712 output: Server listening on port - 5000
+App 458712 output: Executing (default): SELECT count(*) AS `count` FROM `webpieces` AS `webpiece`;
+App 458712 output: Executing (default): CREATE TABLE IF NOT EXISTS `webpieces` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `title` VARCHAR(255) NOT NULL, `description` VARCHAR(255) NOT NULL, `imageUrl` VARCHAR(255) NOT NULL, `imageFullsizedUrl` VARCHAR(255), `isDeleted` TINYINT(1) DEFAULT false, `hasBeenDone` TINYINT(1) DEFAULT false, `selectedTechnologies` INTEGER, `userContactDetails` JSON NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 458712 output: Executing (default): SELECT `id`, `uuid`, `username`, `title`, `description`, `imageUrl`, `imageFullsizedUrl`, `isDeleted`, `hasBeenDone`, `selectedTechnologies`, `userContactDetails`, `createdAt`, `updatedAt` FROM `webpieces` AS `webpiece`;
+App 458712 output: [0mGET /webpieces [36m304[0m 82.043 ms - -[0m
+App 458712 output: Executing (default): SHOW FULL COLUMNS FROM `webpieces`;
+App 458712 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'webpieces' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `description` `description` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageUrl` `imageUrl` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageFullsizedUrl` `imageFullsizedUrl` VARCHAR(255);
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `isDeleted` `isDeleted` TINYINT(1) DEFAULT false;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `hasBeenDone` `hasBeenDone` TINYINT(1) DEFAULT false;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `selectedTechnologies` `selectedTechnologies` INTEGER;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `userContactDetails` `userContactDetails` JSON NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 458712 output: Executing (default): SHOW INDEX FROM `webpieces`
+App 458712 output: made directories, starting with null
+App 458712 output: { fieldname: 'webpieceImage',
+App 458712 output:   originalname: 'newpic.jpg',
+App 458712 output:   encoding: '7bit',
+App 458712 output:   mimetype: 'image/jpeg',
+App 458712 output:   destination: '/home/bankevjs/webpieces/uploads/webpieces',
+App 458712 output:   filename: '1612967886990.jpeg',
+App 458712 output:   path:
+App 458712 output:    '/home/bankevjs/webpieces/uploads/webpieces/1612967886990.jpeg',
+App 458712 output:   size: 111322 }
+App 458712 output: { webpieceImage: '1612967886990.jpeg' }
+App 458712 output: [0mPOST /webpieces/images [32m200[0m 664.623 ms - 2150989[0m
+App 458712 output: Executing (default): SELECT count(*) AS `count` FROM `webpieces` AS `webpiece`;
+App 458712 output: Executing (default): CREATE TABLE IF NOT EXISTS `webpieces` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `title` VARCHAR(255) NOT NULL, `description` VARCHAR(255) NOT NULL, `imageUrl` VARCHAR(255) NOT NULL, `imageFullsizedUrl` VARCHAR(255), `isDeleted` TINYINT(1) DEFAULT false, `hasBeenDone` TINYINT(1) DEFAULT false, `selectedTechnologies` INTEGER, `userContactDetails` JSON NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 458712 output: Executing (default): SELECT `id`, `uuid`, `username`, `title`, `description`, `imageUrl`, `imageFullsizedUrl`, `isDeleted`, `hasBeenDone`, `selectedTechnologies`, `userContactDetails`, `createdAt`, `updatedAt` FROM `webpieces` AS `webpiece`;
+App 458712 output: Executing (default): SHOW FULL COLUMNS FROM `webpieces`;
+App 458712 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'webpieces' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 458712 output: [0mGET /webpieces [36m304[0m 13.469 ms - -[0m
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `description` `description` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageUrl` `imageUrl` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageFullsizedUrl` `imageFullsizedUrl` VARCHAR(255);
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `isDeleted` `isDeleted` TINYINT(1) DEFAULT false;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `hasBeenDone` `hasBeenDone` TINYINT(1) DEFAULT false;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `selectedTechnologies` `selectedTechnologies` INTEGER;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `userContactDetails` `userContactDetails` JSON NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 458712 output: Executing (default): SHOW INDEX FROM `webpieces`
+App 458712 output: Executing (default): SELECT count(*) AS `count` FROM `webpieces` AS `webpiece`;
+App 458712 output: Executing (default): CREATE TABLE IF NOT EXISTS `webpieces` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `title` VARCHAR(255) NOT NULL, `description` VARCHAR(255) NOT NULL, `imageUrl` VARCHAR(255) NOT NULL, `imageFullsizedUrl` VARCHAR(255), `isDeleted` TINYINT(1) DEFAULT false, `hasBeenDone` TINYINT(1) DEFAULT false, `selectedTechnologies` INTEGER, `userContactDetails` JSON NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 458712 output: Executing (default): SELECT `id`, `uuid`, `username`, `title`, `description`, `imageUrl`, `imageFullsizedUrl`, `isDeleted`, `hasBeenDone`, `selectedTechnologies`, `userContactDetails`, `createdAt`, `updatedAt` FROM `webpieces` AS `webpiece`;
+App 458712 output: Executing (default): SHOW FULL COLUMNS FROM `webpieces`;
+App 458712 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'webpieces' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 458712 output: [0mGET /webpieces [36m304[0m 9.176 ms - -[0m
+App 458712 output: Executing (default): SELECT count(*) AS `count` FROM `webpieces` AS `webpiece`;
+App 458712 output: Executing (default): CREATE TABLE IF NOT EXISTS `webpieces` (`id` INTEGER NOT NULL auto_increment , `uuid` CHAR(36) BINARY, `username` VARCHAR(255) NOT NULL, `title` VARCHAR(255) NOT NULL, `description` VARCHAR(255) NOT NULL, `imageUrl` VARCHAR(255) NOT NULL, `imageFullsizedUrl` VARCHAR(255), `isDeleted` TINYINT(1) DEFAULT false, `hasBeenDone` TINYINT(1) DEFAULT false, `selectedTechnologies` INTEGER, `userContactDetails` JSON NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+App 458712 output: Executing (default): SELECT `id`, `uuid`, `username`, `title`, `description`, `imageUrl`, `imageFullsizedUrl`, `isDeleted`, `hasBeenDone`, `selectedTechnologies`, `userContactDetails`, `createdAt`, `updatedAt` FROM `webpieces` AS `webpiece`;
+App 458712 output: Executing (default): SHOW FULL COLUMNS FROM `webpieces`;
+App 458712 output: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'webpieces' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='bankevjs_webpieces' AND REFERENCED_TABLE_NAME IS NOT NULL;
+App 458712 output: [0mGET /webpieces [36m304[0m 6.226 ms - -[0m
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `description` `description` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageUrl` `imageUrl` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageFullsizedUrl` `imageFullsizedUrl` VARCHAR(255);
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `isDeleted` `isDeleted` TINYINT(1) DEFAULT false;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `hasBeenDone` `hasBeenDone` TINYINT(1) DEFAULT false;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `selectedTechnologies` `selectedTechnologies` INTEGER;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `userContactDetails` `userContactDetails` JSON NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 458712 output: Executing (default): SHOW INDEX FROM `webpieces`
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `uuid` `uuid` CHAR(36) BINARY;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `username` `username` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `description` `description` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageUrl` `imageUrl` VARCHAR(255) NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `imageFullsizedUrl` `imageFullsizedUrl` VARCHAR(255);
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `isDeleted` `isDeleted` TINYINT(1) DEFAULT false;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `hasBeenDone` `hasBeenDone` TINYINT(1) DEFAULT false;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `selectedTechnologies` `selectedTechnologies` INTEGER;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `userContactDetails` `userContactDetails` JSON NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+App 458712 output: Executing (default): ALTER TABLE `webpieces` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+App 458712 output: Executing (default): SHOW INDEX FROM `webpieces`
